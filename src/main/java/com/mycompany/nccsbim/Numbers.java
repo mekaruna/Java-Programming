@@ -13,14 +13,19 @@ public class Numbers {
 
     public static void main(String[] args)
     {
-        var _obj = new Numbers(10, 20, 30);
-        System.out.println("Area : " + _obj.getMax());
+        var _obj = new Numbers(52, 99, 37);
+        System.out.println("MAX : " + _obj.getMax());
     }
 
-    public String getMax () {
+    public int getMax () {
 
-        
-
-        return "";
+        if (this.x > this.y && this.x > this.z) {
+            return this.x;
+        } else if (this.y > this.x && this.y > this.z) {
+            return this.y;
+        }  else if (this.z > this.x && this.z > this.y) {
+            return this.z;
+        }
+        return 0; // default return 0
     }
 }
