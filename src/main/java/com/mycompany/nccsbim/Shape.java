@@ -1,3 +1,5 @@
+package com.mycompany.nccsbim;
+
 public class Shape {
     public int length;
     public int breadth;
@@ -21,11 +23,22 @@ public class Shape {
         this.height=height;
     }
 
-    public void calcAreaRectangle(){
-        System.out.println("Area of rectangle is" + (length*breadth));
+    public static void main(String[] args)
+    {
+        var obj = new Shape(10, 20);
+        obj.calcAreaRectangle();
+
+        var obj1 = new Shape(10, 20, 30);
+        obj1.calcVolumeBox();
     }
 
-    public void calcVolumeBox(){
+    public void calcAreaRectangle()
+    {
+        System.out.println("Area of rectangle is " + (length*breadth));
+    }
+
+    public void calcVolumeBox()
+    {
         System.out.println("Volume of box "+ (length*breadth*height));    
     }
 }
