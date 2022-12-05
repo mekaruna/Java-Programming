@@ -26,5 +26,5 @@ public class Rectangle {
     public int displayArea()
     {
         return this.area;
-    };
+    }
 }
